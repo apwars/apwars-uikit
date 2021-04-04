@@ -2028,7 +2028,7 @@ var Logo = function (_a) {
         React.createElement(Logo$1, { className: "desktop-icon", isDark: isDark })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$q, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$r, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
+        isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "APWars Home Page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "APWars Home Page" }, innerLogo))));
 };
 var templateObject_1$c;
 
@@ -2133,15 +2133,15 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/goosedefi/",
+                href: "https://github.com/apwars/",
             },
             {
                 label: "Docs",
-                href: "https://goosedefi.gitbook.io/goose-finance/",
+                href: "https://apwars.gitbook.io/apwars-farm/",
             },
             {
                 label: "Blog",
-                href: "https://goosefinance.medium.com/",
+                href: "https://apwars.medium.com/",
             },
         ],
     },
@@ -2152,68 +2152,15 @@ var socials = [
         icon: "TelegramIcon",
         items: [
             {
-                label: "English",
-                href: "https://t.me/goosedefi",
-            },
-            // {
-            //   label: "Bahasa Indonesia",
-            //   href: "https://t.me/PancakeSwapIndonesia",
-            // },
-            {
-                label: "中文",
-                href: "https://t.me/goosefinancechinese",
-            },
-            // {
-            //   label: "Tiếng Việt",
-            //   href: "https://t.me/PancakeSwapVN",
-            // },
-            {
-                label: "Italiano",
-                href: "https://t.me/goosefinanceitalian",
-            },
-            {
-                label: "русский",
-                href: "https://t.me/goosefinancerussian",
-            },
-            {
-                label: "Türkiye",
-                href: "https://t.me/GooseFinanceTurkey",
-            },
-            // {
-            //   label: "Português",
-            //   href: "https://t.me/PancakeSwapPortuguese",
-            // },
-            {
-                label: "Español",
-                href: "https://t.me/goosefinancespanish",
-            },
-            {
-                label: "日本語",
-                href: "https://t.me/goosefinancejapanese",
-            },
-            {
-                label: "Français",
-                href: "https://t.me/goosefinancefrench",
-            },
-            {
                 label: "Announcements",
-                href: "https://t.me/goosefinanceann",
-            },
-            {
-                label: "Price Bot",
-                href: "https://t.me/BinanceRocketEGG",
+                href: "https://t.me/apwars",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/FinanceGoose",
-    },
-    {
-        label: "Reddit",
-        icon: "RedditIcon",
-        href: "https://www.reddit.com/r/GooseFinanceofficial",
+        href: "https://twitter.com/apwars",
     },
 ];
 var MENU_HEIGHT = 64;
