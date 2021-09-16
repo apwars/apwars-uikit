@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { LogoIcon } from "../../components/Svg";
 import Flex from "../../components/Flex/Flex";
-import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "./icons";
+import { HamburgerIcon, HamburgerCloseIcon } from "./icons";
 import MenuButton from "./MenuButton";
 
 interface Props {
@@ -31,14 +30,8 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
+const Logo: React.FC<Props> = ({ isPushed, togglePush, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
-  const innerLogo = (
-    <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithText className="desktop-icon" isDark={isDark} />
-    </>
-  );
 
   return (
     <Flex>
@@ -51,11 +44,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       </MenuButton>
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="APWars Home Page">
-          {innerLogo}
+          <img width="117" height="38" href="/images/apwars/logo-small.png" alt="APWars" />
         </StyledLink>
       ) : (
         <StyledLink to={href} aria-label="APWars Home Page">
-          {innerLogo}
+          <img width="117" height="38" href="/images/apwars/logo-small.png" alt="APWars" />
         </StyledLink>
       )}
     </Flex>
